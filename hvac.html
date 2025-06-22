@@ -1,48 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HVAC Services - Potent Home Solutions</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-    nav {
-      width: 100%;
-      background-color: #000;
-      padding: 10px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: gold;
-      font-weight: bold;
-      font-size: 16px;
-      text-decoration: none;
-      padding: 0 15px;
-    }
-    .page-wrapper {
-      padding: 2rem;
-    }
-    h1, h2 {
-      color: #ffd700;
-    }
-    ul {
-      line-height: 1.8;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Services | Potent Home Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .top-section {
+            background-color: #003366;
+            padding: 30px 20px 20px 20px;
+            text-align: center;
+        }
+        .top-section h1 {
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .top-section p {
+            font-size: 18px;
+            color: #ffcc00;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #000;
+            padding: 20px;
+        }
+        .text-content {
+            flex: 1;
+            max-width: 500px;
+            padding: 20px;
+        }
+        .text-content h2 {
+            color: yellow;
+            font-size: 26px;
+            margin-top: 0;
+        }
+        .text-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .text-content ul li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 30px;
+        }
+        .text-content ul li::before {
+            content: "❄️";
+            position: absolute;
+            left: 0;
+        }
+        .flyer {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+        }
+        .flyer img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .tagline {
+            background-color: #000;
+            text-align: center;
+            padding: 30px 15px;
+            font-size: 20px;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
+<nav>
     <a href="index.html">Home</a>
     <a href="hvac.html">HVAC</a>
     <a href="electrical.html">Electrical</a>
@@ -50,25 +106,35 @@
     <a href="index.html#request">Request Service</a>
 </nav>
 
-<div class="page-wrapper">
-<div class="page-wrapper" style="padding: 2rem; color: #fff; background-color: #111;">
-<h1 style="color: #ffd700;">HVAC Services</h1>
-<p>We specialize in keeping your space cool and efficient, no matter how brutal the Florida heat gets. From regular maintenance to advanced smart upgrades, Potent Home Solutions delivers high-quality HVAC work with a focus on speed, performance, and longevity.</p>
-<h2 style="color: #ffd700;">Our HVAC Work Includes:</h2>
-<ul style="line-height: 1.8;">
-<li><strong>AC Tune-Ups:</strong> Full performance check, cleanings, and optimization.</li>
-<li><strong>Drain Line Cleaning:</strong> Prevent water damage and AC shutdowns.</li>
-<li><strong>Capacitor &amp; Contactor Swaps:</strong> Fast fixes for common failure points.</li>
-<li><strong>Thermostat Installations:</strong> Standard and smart thermostats.</li>
-<li><strong>Float Switches:</strong> Installed to help avoid clogs and overflows.</li>
-<li><strong>UV Light Add-Ons:</strong> Helps neutralize mold, bacteria, and viruses.</li>
-<li><strong>Duct Cleaning:</strong> Cleaner air, better airflow, and system efficiency.</li>
-<li><strong>Coil Cleaning:</strong> Both indoor (evaporator) and outdoor (condenser) coils cleaned in-place.</li>
-<li><strong>Mini-Maintenance Combos:</strong> Tailored packages for seasonal care.</li>
-<li><strong>Smart HVAC Bundles:</strong> Integrated comfort and air quality control.</li>
-</ul>
-<p>Whether it’s basic upkeep or a full system optimization, our goal is simple — cold air that slaps, delivered with professionalism and speed.</p>
+<div class="top-section">
+    <h1>HVAC Services</h1>
+    <p>We specialize in keeping your space cool and efficient, no matter how brutal the Florida heat gets. From regular maintenance to advanced smart upgrades, Potent Home Solutions delivers high-quality HVAC work with a focus on speed, performance, and longevity.</p>
 </div>
+
+<div class="content">
+    <div class="text-content">
+        <h2>Our HVAC Work Includes:</h2>
+        <ul>
+            <li><strong>AC Tune-Ups:</strong> Full performance check, cleanings, and optimization.</li>
+            <li><strong>Drain Line Cleaning:</strong> Prevent water damage and AC shutdowns.</li>
+            <li><strong>Capacitor & Contactor Swaps:</strong> Fast fixes for common failure points.</li>
+            <li><strong>Thermostat Installations:</strong> Standard and smart thermostats.</li>
+            <li><strong>Float Switches:</strong> Installed to help avoid clogs and overflows.</li>
+            <li><strong>UV Light Add-Ons:</strong> Helps neutralize mold, bacteria, and viruses.</li>
+            <li><strong>Duct Cleaning:</strong> Cleaner air, better airflow, and system efficiency.</li>
+            <li><strong>Coil Cleaning:</strong> Both indoor (evaporator) and outdoor (condenser) coils cleaned in-place.</li>
+            <li><strong>Mini-Maintenance Combos:</strong> Tailored packages for seasonal care.</li>
+            <li><strong>Smart HVAC Bundles:</strong> Integrated comfort and air quality control.</li>
+        </ul>
+    </div>
+    <div class="flyer">
+        <img src="images/hvac_flyer.png" alt="HVAC Promo Flyer">
+    </div>
 </div>
+
+<div class="tagline">
+    Cold air that slaps, delivered with professionalism and speed.
+</div>
+
 </body>
 </html>
