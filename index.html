@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Potent Home Solutions</title>
-  <link href="styles.css" rel="stylesheet" />
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Potent Home Solutions
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
   <style>
-    body {
+   body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #111;
@@ -111,103 +113,151 @@
       text-decoration: none;
     }
     @media screen and (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-    }
-
-  margin-left: 15px;
-}
-@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
   nav a {
-    display: block;
-    margin: 10px 0;
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }
-</style>
-</head>
-<body>
+  </style>
+ </head>
+ <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="hvac.html">HVAC</a>
-    <a href="electrical.html">Electrical</a>
-    <a href="plumbing.html">Plumbing</a>
-    <a href="#request">Request Service</a>
+   <a href="index.html">
+    Home
+   </a>
+   <a href="hvac.html">
+    HVAC
+   </a>
+   <a href="electrical.html">
+    Electrical
+   </a>
+   <a href="plumbing.html">
+    Plumbing
+   </a>
+   <a href="#request">
+    Request Service
+   </a>
   </nav>
-
   <header class="hero">
-    <img src="images/logo_main.png" alt="Potent Home Solutions Logo" style="max-width: 260px; width: 90%; height: auto; margin: 10px auto 25px; display: block;">
-    <h1>Air That Hits. Power That Sticks.</h1>
-    <p>Serving South Florida with elite HVAC, Electrical, and Plumbing care.</p>
-    <a class="cta-button" href="tel:4054006320">Call Now: (405) 400-6320</a>
+   <img alt="Potent Home Solutions Logo" src="images/logo_main.png" style="max-width: 260px; width: 90%; height: auto; margin: 10px auto 25px; display: block;"/>
+   <h1>
+    Air That Hits. Power That Sticks.
+   </h1>
+   <p>
+    Serving South Florida with elite HVAC, Electrical, and Plumbing care.
+   </p>
+   <a class="cta-button" href="tel:4054006320">
+    Call Now: (405) 400-6320
+   </a>
   </header>
-
   <section class="about">
-    <h2>About Us</h2>
-    <p>At Potent Home Solutions, we believe every home deserves quality, dependable service.
+   <h2>
+    About Us
+   </h2>
+   <p>
+    At Potent Home Solutions, we believe every home deserves quality, dependable service.
       Whether it’s keeping your air cool in the Florida heat, solving electrical issues, or
-      tackling minor plumbing problems — we’ve got your back.</p>
-    <p>We're a locally based company built on honesty, hard work, and respect for your time and space.
-      Our mission is simple: <strong>deliver top-tier service with a personal touch</strong> that
-      leaves you confident in who you call.</p>
+      tackling minor plumbing problems — we’ve got your back.
+   </p>
+   <p>
+    We're a locally based company built on honesty, hard work, and respect for your time and space.
+      Our mission is simple:
+    <strong>
+     deliver top-tier service with a personal touch
+    </strong>
+    that
+      leaves you confident in who you call.
+   </p>
   </section>
-
-<section class="about" style="text-align: center;">
-  <img src="images/promo_cartoon.png" style="max-width: 100%; max-height: 420px; height: auto; display: block; margin: 20px auto;" alt="PHS Cartoon Promo" style="max-width: 700px; width: 90%; height: auto; margin: 20px auto; display: block;">
-</section>
-</section>
-
+  <section class="about" style="text-align: center;">
+   <img alt="PHS Cartoon Promo" src="images/promo_cartoon.png" style="max-width: 700px; width: 90%; height: auto; margin: 20px auto; display: block;"/>
+  </section>
   <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <a href="hvac.html" style="text-decoration: none; color: inherit;">
-        <div class="service"><span>❄️</span>
-          <h3>HVAC</h3>
-          <p>Cold air that slaps. Built to beat Florida heat.</p>
-        </div>
-      </a>
-      <a href="electrical.html" style="text-decoration: none; color: inherit;">
-        <div class="service"><span>⚡</span>
-          <h3>Electrical</h3>
-          <p>The volts hit harder when it’s Potent.</p>
-        </div>
-      </a>
-      <a href="plumbing.html" style="text-decoration: none; color: inherit;">
-        <div class="service"><span>💧</span>
-          <h3>Plumbing</h3>
-          <p>Flood the job with quality — not your house.</p>
-        </div>
-      </a>
-    </div>
+   <h2>
+    Our Services
+   </h2>
+   <div class="service-list">
+    <a href="hvac.html" style="text-decoration: none; color: inherit;">
+     <div class="service">
+      <span>
+       ❄️
+      </span>
+      <h3>
+       HVAC
+      </h3>
+      <p>
+       Cold air that slaps. Built to beat Florida heat.
+      </p>
+     </div>
+    </a>
+    <a href="electrical.html" style="text-decoration: none; color: inherit;">
+     <div class="service">
+      <span>
+       ⚡
+      </span>
+      <h3>
+       Electrical
+      </h3>
+      <p>
+       The volts hit harder when it’s Potent.
+      </p>
+     </div>
+    </a>
+    <a href="plumbing.html" style="text-decoration: none; color: inherit;">
+     <div class="service">
+      <span>
+       💧
+      </span>
+      <h3>
+       Plumbing
+      </h3>
+      <p>
+       Flood the job with quality — not your house.
+      </p>
+     </div>
+    </a>
+   </div>
   </section>
   <div style="text-align:center;">
-    <img src="images/why_choose_phs.png" alt="Why Choose Potent Home Solutions" style="max-width: 360px; width: 100%; height: auto; margin: 40px auto;">
+   <img alt="Why Choose Potent Home Solutions" src="images/why_choose_phs.png" style="max-width: 360px; width: 100%; height: auto; margin: 40px auto;"/>
   </div>
-
   <section class="form-section" id="request">
-    <h2>Request Service</h2>
-    <form action="https://formspree.io/f/mjvnpvgz" method="POST">
-      <input name="name" type="text" placeholder="Full Name" required>
-      <input name="phone" type="tel" placeholder="Phone Number" required>
-      <input name="email" type="email" placeholder="Email Address" required>
-      <select name="service" required>
-        <option value="" disabled selected>Select a Service</option>
-        <option value="HVAC">HVAC</option>
-        <option value="Electrical">Electrical</option>
-        <option value="Plumbing">Plumbing</option>
-      </select>
-      <textarea name="message" rows="5" placeholder="Describe the issue..." required></textarea>
-      <input class="cta-button" type="submit" value="Submit Request">
-    </form>
+   <h2>
+    Request Service
+   </h2>
+   <form action="https://formspree.io/f/mjvnpvgz" method="POST">
+    <input name="name" placeholder="Full Name" required="" type="text"/>
+    <input name="phone" placeholder="Phone Number" required="" type="tel"/>
+    <input name="email" placeholder="Email Address" required="" type="email"/>
+    <select name="service" required="">
+     <option disabled="" selected="" value="">
+      Select a Service
+     </option>
+     <option value="HVAC">
+      HVAC
+     </option>
+     <option value="Electrical">
+      Electrical
+     </option>
+     <option value="Plumbing">
+      Plumbing
+     </option>
+    </select>
+    <textarea name="message" placeholder="Describe the issue..." required="" rows="5"></textarea>
+    <input class="cta-button" type="submit" value="Submit Request"/>
+   </form>
   </section>
-
   <footer>
-    <img src="phs_emblem.png" alt="PHS Emblem">
-    <p>&copy; 2025 Potent Home Solutions. All rights reserved.</p>
+   <img alt="PHS Emblem" src="phs_emblem.png"/>
+   <p>
+    © 2025 Potent Home Solutions. All rights reserved.
+   </p>
   </footer>
-</body>
+ </body>
 </html>
