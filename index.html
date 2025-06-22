@@ -1,59 +1,168 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Potent Home Solutions</title>
-<link href="styles.css" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potent Home Solutions</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    nav {
+      width: 100%;
+      background-color: #000;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: gold;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 0 15px;
+    }
+    header.hero {
+      background: linear-gradient(to right, #000428, #004e92);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header.hero h1 {
+      color: #ffd700;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .cta-button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .about, .services, .form-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .service-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .service {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: scale(1.05);
+    }
+    .form-section form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, select, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+    }
+    footer img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<body><nav style="width: 100%; background-color: #000; padding: 10px 0; text-align: center;"><a href="index.html" style="color: gold; font-weight: bold; font-size: 16px; text-decoration: none; padding: 0 15px;">Home</a><span style="color: gold; font-weight: bold; font-size: 18px;">|</span><a href="hvac.html" style="color: gold; font-weight: bold; font-size: 16px; text-decoration: none; padding: 0 15px;">HVAC</a><span style="color: gold; font-weight: bold; font-size: 18px;">|</span><a href="electrical.html" style="color: gold; font-weight: bold; font-size: 16px; text-decoration: none; padding: 0 15px;">Electrical</a><span style="color: gold; font-weight: bold; font-size: 18px;">|</span><a href="plumbing.html" style="color: gold; font-weight: bold; font-size: 16px; text-decoration: none; padding: 0 15px;">Plumbing</a></nav>
-<header>
-<img alt="Potent Home Solutions Logo" class="main-logo" src="main_logo.png"/>
-<h2 class="tagline">Air That Hits, Power That Sticks.</h2>
-<a class="cta-button" href="tel:4054006320">Call Now: (405) 400-6320</a>
-</header>
-<section class="about">
-<h2>About Us</h2>
-<p>
-      At Potent Home Solutions, I believe every home deserves quality, dependable service.
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="hvac.html">HVAC</a>
+    <a href="electrical.html">Electrical</a>
+    <a href="plumbing.html">Plumbing</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Air That Hits. Power That Sticks.</h1>
+    <p>Serving South Florida with elite HVAC, Electrical, and Plumbing care.</p>
+    <a class="cta-button" href="tel:4054006320">Call Now: (405) 400-6320</a>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>At Potent Home Solutions, we believe every home deserves quality, dependable service.
       Whether it’s keeping your air cool in the Florida heat, solving electrical issues, or
-      tackling minor plumbing problems — we’ve got your back.
-    </p>
-<p>
-      We're a locally based company built on honesty, hard work, and respect for your time and space.
+      tackling minor plumbing problems — we’ve got your back.</p>
+    <p>We're a locally based company built on honesty, hard work, and respect for your time and space.
       Our mission is simple: <strong>deliver top-tier service with a personal touch</strong> that
-      leaves you confident in who you call.
-    </p>
-</section>
-<section class="services">
-<h2>Our Services</h2>
-<div class="service-list">
-<a href="hvac.html" style="text-decoration: none; color: inherit;"><div class="service"><span>❄️</span><h3>HVAC</h3><p>Cold air that slaps. Built to beat Florida heat.</p></div></a>
-<a href="electrical.html" style="text-decoration: none; color: inherit;"><div class="service"><span>⚡</span><h3>Electrical</h3><p>The volts hit harder when it’s Potent.</p></div></a>
-<a href="plumbing.html" style="text-decoration: none; color: inherit;"><div class="service"><span>💧</span><h3>Plumbing</h3><p>Flood the job with quality — not your house.</p></div></a>
-</div>
-</section>
-<section class="form-section">
-<h2>Request Service</h2>
-<form action="https://formspree.io/f/mjvnpvgz" method="POST">
-<input name="name" placeholder="Full Name" required="" type="text"/>
-<input name="phone" placeholder="Phone Number" required="" type="tel"/>
-<input name="email" placeholder="Email Address" required="" type="email"/>
-<select name="service" required="">
-<option disabled="" selected="" value="">Select a Service</option>
-<option value="HVAC">HVAC</option>
-<option value="Electrical">Electrical</option>
-<option value="Plumbing">Plumbing</option>
-</select>
-<textarea name="message" placeholder="Describe the issue..." required="" rows="5"></textarea>
-<input class="cta-button" type="submit" value="Submit Request"/>
-</form>
-</section>
-<footer>
-<img alt="PHS Emblem" class="footer-logo" src="phs_emblem.png"/>
-<p>© 2025 Potent Home Solutions. All rights reserved.</p>
-</footer>
+      leaves you confident in who you call.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <a href="hvac.html" style="text-decoration: none; color: inherit;">
+        <div class="service"><span>❄️</span>
+          <h3>HVAC</h3>
+          <p>Cold air that slaps. Built to beat Florida heat.</p>
+        </div>
+      </a>
+      <a href="electrical.html" style="text-decoration: none; color: inherit;">
+        <div class="service"><span>⚡</span>
+          <h3>Electrical</h3>
+          <p>The volts hit harder when it’s Potent.</p>
+        </div>
+      </a>
+      <a href="plumbing.html" style="text-decoration: none; color: inherit;">
+        <div class="service"><span>💧</span>
+          <h3>Plumbing</h3>
+          <p>Flood the job with quality — not your house.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Request Service</h2>
+    <form action="https://formspree.io/f/mjvnpvgz" method="POST">
+      <input name="name" type="text" placeholder="Full Name" required>
+      <input name="phone" type="tel" placeholder="Phone Number" required>
+      <input name="email" type="email" placeholder="Email Address" required>
+      <select name="service" required>
+        <option value="" disabled selected>Select a Service</option>
+        <option value="HVAC">HVAC</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Plumbing">Plumbing</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Describe the issue..." required></textarea>
+      <input class="cta-button" type="submit" value="Submit Request">
+    </form>
+  </section>
+
+  <footer>
+    <img src="phs_emblem.png" alt="PHS Emblem">
+    <p>&copy; 2025 Potent Home Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
