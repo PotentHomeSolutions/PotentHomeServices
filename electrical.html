@@ -2,123 +2,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Electrical Services - Potent Home Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: white;
-    }
-    .navbar {
-      background-color: black;
-      padding: 15px;
-      text-align: center;
-    }
-    .navbar a {
-      color: gold;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .headline {
-      background-color: #003366;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    .headline h1 {
-      margin: 0;
-      color: white;
-      font-size: 26px;
-    }
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      background-color: black;
-    }
-    .services {
-      flex: 1 1 400px;
-      max-width: 600px;
-      padding: 20px;
-    }
-    .services h2 {
-      color: gold;
-    }
-    .services ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .services li::before {
-      content: "⚡";
-      color: gold;
-      margin-right: 10px;
-    }
-    .services li {
-      padding: 5px 0;
-    }
-    .flyer {
-      flex: 1 1 300px;
-      text-align: center;
-    }
-    .flyer img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-    .tagline {
-      background-color: black;
-      color: gold;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Services - Potent Home Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .nav {
+            background-color: #000;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .nav a {
+            color: #FFD700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header {
+            background-color: #072A60;
+            padding: 40px 20px 20px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: white;
+            font-size: 36px;
+        }
+        .header p {
+            margin-top: 10px;
+            color: #FFD700;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .services, .flyer {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .flyer img {
+            max-width: 100%;
+            height: auto;
+        }
+        .tagline {
+            background-color: #000;
+            color: #FFD700;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "⚡ ";
+            color: #FFD700;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="hvac.html">HVAC</a>
-    <a href="electrical.html">Electrical</a>
-    <a href="plumbing.html">Plumbing</a>
-    <a href="request.html">Request Service</a>
-  </div>
-
-  <div class="headline">
-    <h1>Need Power? We Got You.</h1>
-  </div>
-
-  <div class="content">
-    <div class="services">
-      <h2>Electrical Services</h2>
-      <ul>
-        <li>Light Fixture & Ceiling Fan Installs</li>
-        <li>New Switches, Dimmers, or Outlets</li>
-        <li>Outdoor & Patio Outlet Installs</li>
-        <li>Subpanel Add-Ons (Cleanups)</li>
-        <li>Smart Device Wiring (Thermostats, Cameras, etc.)</li>
-      </ul>
-      <h2>Upgrade Add-Ons:</h2>
-      <ul>
-        <li>GFCI Outlet Upgrade – from $125</li>
-        <li>Outdoor Outlet Install – from $160</li>
-        <li>Fan Install (Existing Box) – from $90</li>
-      </ul>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="hvac.html">HVAC</a>
+        <a href="electrical.html">Electrical</a>
+        <a href="plumbing.html">Plumbing</a>
+        <a href="request.html">Request Service</a>
     </div>
 
-    <div class="flyer">
-      <img src="electrical_flyer.png" alt="Electrical Services Flyer">
+    <div class="header">
+        <h1>ELECTRICAL SERVICES</h1>
+        <p>Whether it’s lighting upgrades or smart home setups, our electrical work is powered by precision and trust.</p>
     </div>
-  </div>
 
-  <div class="tagline">
-    Flood the job with quality — not your house.
-  </div>
+    <div class="content">
+        <div class="services">
+            <ul>
+                <li><strong>Light Fixture & Ceiling Fan Installs:</strong> Interior and exterior lighting installation.</li>
+                <li><strong>New Switches, Dimmers, or Outlets:</strong> Replace or install for modern control.</li>
+                <li><strong>Outdoor & Patio Outlet Installs:</strong> Weather-rated and secure connections.</li>
+                <li><strong>Subpanel Add-Ons (Cleanups):</strong> Expand capacity and clean up your electrical panel.</li>
+                <li><strong>Smart Device Wiring:</strong> Thermostats, cameras, and smart home integrations.</li>
+            </ul>
+            <br>
+            <h3 style="color: #FFD700;">Upgrade Add-Ons:</h3>
+            <ul>
+                <li>GFCI Outlet Upgrade — from $125</li>
+                <li>Outdoor Outlet Install — from $160</li>
+                <li>Fan Install (Existing Box) — from $90</li>
+            </ul>
+        </div>
+        <div class="flyer">
+            <img src="images/electrical_flyer.png" alt="Electrical Promo Flyer">
+        </div>
+    </div>
+
+    <div class="tagline">Powered by precision, wired for trust.</div>
 </body>
 </html>
