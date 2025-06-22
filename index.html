@@ -6,35 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Potent Home Solutions</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    nav {
-      background-color: #000;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="hvac.html">HVAC</a>
-    <a href="electrical.html">Electrical</a>
-    <a href="plumbing.html">Plumbing</a>
-  </nav>
-  <section class="hero">
-    <h1>Welcome to Potent Home Solutions</h1>
-    <p>Elite HVAC, Electrical, and Plumbing Services</p>
+  <header>
+    <img src="assets/main_logo.png" alt="Potent Home Solutions Logo" class="main-logo" />
+    <h2 class="tagline">Air That Hits, Power That Sticks.</h2>
+    <a href="tel:4054006320" class="cta-button">Call Now: (405) 400-6320</a>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At Potent Home Solutions, we believe every home deserves quality, dependable service.
+      Whether it’s keeping your air cool in the Florida heat, solving electrical issues, or
+      tackling minor plumbing problems — we’ve got your back.
+    </p>
+    <p>
+      We're a locally based company built on honesty, hard work, and respect for your time and space.
+      Our mission is simple: <strong>deliver top-tier service with a personal touch</strong> that
+      leaves you confident in who you call.
+    </p>
   </section>
+
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-list">
@@ -43,5 +36,27 @@
       <div class="service"><span>💧</span><h3>Plumbing</h3><p>Flood the job with quality — not your house.</p></div>
     </div>
   </section>
+
+  <section class="form-section">
+    <h2>Request Service</h2>
+    <form action="https://formspree.io/f/mjvnpvgz" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <select name="service" required>
+        <option value="" disabled selected>Select a Service</option>
+        <option value="HVAC">HVAC</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Plumbing">Plumbing</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Describe the issue..." required></textarea>
+      <input type="submit" value="Submit Request" class="cta-button" />
+    </form>
+  </section>
+
+  <footer>
+    <img src="assets/phs_emblem.png" alt="PHS Emblem" class="footer-logo" />
+    <p>© 2025 Potent Home Solutions. All rights reserved.</p>
+  </footer>
 </body>
 </html>
