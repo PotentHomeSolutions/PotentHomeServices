@@ -1,12 +1,11 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Plumbing Services | Potent Home Solutions</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plumbing Services | Potent Home Solutions</title>
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -91,6 +90,9 @@
     }
     @media screen and (max-width: 600px) {
       nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -104,37 +106,42 @@
   </style>
 </head>
 <body>
-<header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="hvac.html">HVAC</a>
-    <a href="electrical.html">Electrical</a>
-    <a href="plumbing.html">Plumbing</a>
-    <a href="index.html#request">Request Service</a>
-</nav>
-</header>
-<section class="hero">
-<h1>Plumbing Services</h1>
-<p>Serving Broward County and surrounding areas</p>
-</section>
-<section class="services-container">
-<div class="services-text">
-<h2>Our Plumbing Services</h2>
-<ul>
-<li>💧 Pipe Leak Repairs</li>
-<li>💧 Faucet &amp; Fixture Repairs</li>
-<li>💧 Drain Clearing &amp; Unclogging</li>
-<li>💧 Garbage Disposal Installs</li>
-<li>💧 Undersink Water Filtration Installs (via licensed partner)</li>
-<li>💧 Full-Home Water Filtration Systems (via licensed partner)</li>
-</ul>
-</div>
-<div class="services-image">
-<img alt="Plumbing Flyer" src="images/PHS_Plumbing_Flyer_Small.png"/>
-</div>
-</section>
-<footer class="tagline">
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="hvac.html">HVAC</a>
+      <a href="electrical.html">Electrical</a>
+      <a href="plumbing.html">Plumbing</a>
+      <a href="index.html#request-form">Request Service</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Plumbing Services</h1>
+    <p>Serving Broward County and surrounding areas</p>
+  </section>
+
+  <section class="services-container">
+    <div class="services-text">
+      <h2>Our Plumbing Services</h2>
+      <ul>
+        <li>💧 Pipe Leak Repairs</li>
+        <li>💧 Faucet & Fixture Repairs</li>
+        <li>💧 Drain Clearing & Unclogging</li>
+        <li>💧 Garbage Disposal Installs</li>
+        <li>💧 Undersink Water Filtration Installs (via licensed partner)</li>
+        <li>💧 Full-Home Water Filtration Systems (via licensed partner)</li>
+      </ul>
+    </div>
+    <div class="services-image">
+      <img src="images/PHS_Plumbing_Flyer_Small.png" alt="Plumbing Flyer"/>
+    </div>
+  </section>
+
+  <footer class="tagline">
     Flood the job with quality — not your house.
   </footer>
+
 </body>
 </html>
